@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "programming-languages-api",
+    "name": "mock-spotify-api",
     "builds": [
       { "src": "index.js", "use": "@vercel/node" }
     ],

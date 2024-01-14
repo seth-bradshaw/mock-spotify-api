@@ -19,6 +19,9 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true, limit: '50mb', parameterLimit: 50000 }));
+app.get('/', (req, res) => {
+    res.json({'message': 'ok'});
+  })
 app.use('/auth', AuthRouter.route)
 app.use('/playback', playbackRouter.route)
 app.use('/search', searchRouter.route)
